@@ -18,4 +18,4 @@ systemctl enable backend
 systemctl start backend
 
 dnf install mysql -y
-mysql -h mysql.malleswaridevops.online -uroot -pExpenseApp@1 < /app/schema/backend.sql
+mysql -h 2.malleswaridevops.online -uroot -pExpenseApp@1 < /app/schema/backend.sql
