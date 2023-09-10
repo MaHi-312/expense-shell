@@ -11,7 +11,7 @@ stat_check
 }
 
  stat_check() {
-if [ $? =eq 0 ] ; then
+if [ $? -eq 0 ] ; then
   echo -e "\e[32msucces\e[0m"
   else
     echo -e "\e[31mfailed\e[0m"
