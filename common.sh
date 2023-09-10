@@ -8,5 +8,13 @@ echo $?
   echo extracting $component code
   unzip /tmp/$component.zip >>$log_file
   echo $?
-
 }
+
+ stat_check() {
+if [ $? =eq 0 ] ; then
+  echo -e "\e[32msucces\e[0m"
+  else
+    echo -e "\e[31mfailed\e[0m"
+    exit 1
+    fi
+ }
