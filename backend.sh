@@ -1,5 +1,6 @@
 source common.sh
 component=backend
+
 type npm &>>$log_file
 if [ $? -ne 0 ];then
 echo install nodejs repos
